@@ -27,7 +27,7 @@ function Header() {
       </a>
       <nav className={styles.navLinks}>
         {navLinks.map((link) => (
-          <a href="">{link.title}</a>
+          <li>{link.title}</li>
         ))}
 
         {/* <a href="https://fakemessenger.netlify.app/" target="_blank">

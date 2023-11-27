@@ -28,7 +28,7 @@ function footer() {
           /> */}
           Instagram
         </a>
-        <div className={styles.rightDiv}>@Created By Shio</div>
+        <div className={styles.rightDiv}>@Created By Shio&lt;703/&gt;</div>
       </div>
       <div className={styles.bottomDiv}></div>
     </footer>

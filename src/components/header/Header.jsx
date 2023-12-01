@@ -1,25 +1,29 @@
 import React from "react";
 import styles from "./header.module.css";
+import Link from "next/link";
 
 function Header() {
   const navLinks = [
     {
       id: 1,
       title: "HTML & CSS",
+      url: "/htmlcss",
     },
     {
       id: 2,
       title: "Javascript",
+      url: "/javascript",
     },
     {
       id: 3,
       title: "JS To Do",
+      url: "/jstodo",
     },
   ];
 
   return (
     <header className={styles.header}>
-      <a href="">
+      <a href="/">
         <img
           src="https://icons.iconarchive.com/icons/justicon/free-simple-line/72/Development-Interface-Computer-Photo-Gear-Browser-icon.png"
           alt="Logo"
@@ -27,9 +31,12 @@ function Header() {
       </a>
       <nav className={styles.navLinks}>
         {navLinks.map((link) => (
-          <li>{link.title}</li>
+          <Link className={styles.navLink} href={link.url}>
+            {link.title}
+          </Link>
         ))}
-
+       {/* testing commits */} 
+       
         {/* <a href="https://fakemessenger.netlify.app/" target="_blank">
           HTML & CSS
         </a>
@@ -39,7 +46,6 @@ function Header() {
         <a href="https://jstodobyshio.netlify.app/" target="_blank">
           JS To Do
         </a> */}
-
       </nav>
     </header>
   );

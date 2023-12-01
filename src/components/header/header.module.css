@@ -1,33 +1,33 @@
-.header{
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.header {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .header > a > img {
-    max-width: 55px;
-    margin: 0.5em 0 0.5em 0.5em;
+  max-width: 55px;
+  margin: 0.5em 0 0.5em 0.5em;
 }
 .navLinks {
-    display: flex;
-    gap: 17px;
-    align-items: center;
-    margin-right: 1.2em;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-right: 1.2em;
 }
 
-.navLinks > li {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    list-style: none;
+.navLink {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  list-style: none;
 }
 
-.navLinks > li:hover {
-    font-weight: 800;
-    color: rgb(142, 214, 34);
-    font-size: large;
-    transition: 0.5s;
-    
+.navLink:hover {
+  font-weight: 800;
+  color: rgb(142, 214, 34);
+  font-size: large;
+  transition: 0.5s;
+
 }

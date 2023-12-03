@@ -1,0 +1,13 @@
+.main {
+    background-color: antiquewhite;
+    min-height: 47em;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+  }
+
+.mainTitle {
+    padding-top: 1em;
+    text-align: center;
+    
+    
+}

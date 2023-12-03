@@ -19,6 +19,11 @@ function Header() {
       title: "JS To Do",
       url: "/jstodo",
     },
+    {
+      id: 4,
+      title: "About",
+      url: "/about",
+    },
   ];
 
   return (
@@ -35,17 +40,6 @@ function Header() {
             {link.title}
           </Link>
         ))}
-       {/* testing commits */} 
-       
-        {/* <a href="https://fakemessenger.netlify.app/" target="_blank">
-          HTML & CSS
-        </a>
-        <a href="https://fmjavascript.netlify.app" target="_blank">
-          Javascript
-        </a>
-        <a href="https://jstodobyshio.netlify.app/" target="_blank">
-          JS To Do
-        </a> */}
       </nav>
     </header>
   );

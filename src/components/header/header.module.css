@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .header > a > img {
@@ -26,8 +25,7 @@
 
 .navLink:hover {
   font-weight: 800;
-  color: rgb(142, 214, 34);
   font-size: large;
   transition: 0.5s;
-
+  color: inherit;
 }

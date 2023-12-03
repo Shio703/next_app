@@ -1,0 +1,33 @@
+.main {
+    background-color: antiquewhite;
+    min-height: 47em;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+
+}
+
+.main > h3 {
+    text-align: center;
+    padding: 1em;
+}
+
+.profileSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.profilePic {
+    border-radius: 50%;
+}
+.profileLinks {
+    display: flex;
+    gap: 0.5em;
+    transform: translateY(-2.5em);
+    align-items: center;
+}
+
+.profileInfo {
+    max-width: 70%;
+    text-align: center;
+}

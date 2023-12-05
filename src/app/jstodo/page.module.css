@@ -1,0 +1,60 @@
+.main {
+    background-color: antiquewhite;
+    min-height: 47em;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+  }
+  
+  .mainTitle {
+    padding-top: 1em;
+    text-align: center;
+  }
+  
+  .mainSec {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+  
+  .imageWrapper {
+    width: 45%;
+    position: relative;
+    margin: 2em 0 0 2em;
+    min-height: 35vh;
+  }
+  
+  .msImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 65vh;
+    border-radius: 17px;
+  }
+  
+  .textWrapper {
+    text-align: center;
+    margin: 4em 0.7em 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+  }
+  @media screen and (max-width: 757px) {
+    .mainSec {
+      flex-direction: column;
+    }
+    .imageWrapper {
+      margin: 0;
+      margin-top: 2em;
+      width: 69%;
+    }
+    .mainSec {
+      gap: 0;
+    }
+    .msImage {
+      height: 90%;
+    }
+    .textWrapper {
+      margin-top: 1.5em;
+    }
+  }
+  

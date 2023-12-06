@@ -1,5 +1,5 @@
 .footerDiv {
-  background-color:aliceblue;
+  background-color: aliceblue;
   display: flex;
   justify-content: space-evenly;
 }
@@ -12,15 +12,24 @@
   color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 1px 0 1px 0;
+  min-width: 110px;
 }
-
+.linkIcon {
+  border-radius: 17px;
+}
 .rightDiv {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .bottomDiv {
-    background-color: bisque;
-    min-height: 4em;
-    border-radius: 0 0 8px 8px;
+  background-color: bisque;
+  min-height: 4em;
+  border-radius: 0 0 8px 8px;
+}
+
+@media screen and (max-width: 528px) {
+  .footerDiv {
+    flex-wrap: wrap;
+  }
 }

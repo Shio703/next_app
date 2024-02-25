@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   const navLinks = [
@@ -11,7 +13,7 @@ function Header() {
     },
     {
       id: 2,
-      title: "Javascript",
+      title: "JavaScript",
       url: "/javascript",
     },
     {
@@ -26,22 +28,47 @@ function Header() {
     },
   ];
 
+  const handleBurgerOpen = () => {
+    // console.log("clicked");
+    
+  };
+
   return (
-    <header className={styles.header}>
-      <a href="/">
-        <img
-          src="https://icons.iconarchive.com/icons/justicon/free-simple-line/72/Development-Interface-Computer-Photo-Gear-Browser-icon.png"
-          alt="Logo"
+    <>
+      <header className={styles.header}>
+        <a href="/">
+          <img
+            src="https://icons.iconarchive.com/icons/justicon/free-simple-line/72/Development-Interface-Computer-Photo-Gear-Browser-icon.png"
+            alt="Logo"
+          />
+        </a>
+        <nav className={styles.navLinks}>
+          {navLinks.map((link) => (
+            <Link className={styles.navLink} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+        </nav>
+        <Image
+          onClick={handleBurgerOpen}
+          src="/Bg-icon.png"
+          width={40}
+          height={40}
+          className={styles.burgerMenuIcon}
         />
-      </a>
-      <nav className={styles.navLinks}>
+        {/* ბურგერ მენიუ იქნება აქ */}
+      </header>
+
+      <div className={styles.menu}>
         {navLinks.map((link) => (
-          <Link className={styles.navLink} href={link.url}>
-            {link.title}
-          </Link>
+          <li className={styles.menuLink}>
+            <Link className={styles.menuLink} href={link.url}>
+              {link.title}
+            </Link>
+          </li>
         ))}
-      </nav>
-    </header>
+      </div>
+    </>
   );
 }
 

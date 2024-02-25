@@ -29,3 +29,30 @@
   transition: 0.5s;
   color: inherit;
 }
+
+.burgerMenuIcon {
+ display: none;
+ margin-right: 0.5em;
+}
+
+.menu {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuLink {
+ text-decoration: none;
+ list-style-type: none;
+ color: black;
+}
+
+@media screen and (max-width:435px) {
+  .navLinks {
+    display: none;
+  }
+  .burgerMenuIcon {
+    display: flex;
+  }
+}

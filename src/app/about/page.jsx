@@ -35,10 +35,9 @@ function About() {
           </a>
         </div>
         <p className={styles.profileInfo}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aliquam
-          odit soluta modi et, repellendus consequatur assumenda dicta,
-          distinctio velit in consequuntur placeat labore cum perspiciatis
-          praesentium debitis? Saepe, similique!
+          Hello! I'm <b>Shio&lt;703/&gt;</b> Beginner Frontend Web Developer. I
+          had learned web technologies such as HTML & CSS, JavaScript and
+          React's Framework Next.js.
         </p>
       </section>
     </main>

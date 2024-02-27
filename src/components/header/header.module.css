@@ -31,28 +31,36 @@
 }
 
 .burgerMenuIcon {
- display: none;
- margin-right: 0.5em;
+  display: none;
+  margin-right: 0.5em;
 }
 
 .menu {
   text-align: center;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 98;
+  margin-top: 4.5em;
+  background-color: aliceblue;
 }
 
 .menuLink {
- text-decoration: none;
- list-style-type: none;
- color: black;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-size: larger;
+  margin: 17px;
 }
 
-@media screen and (max-width:435px) {
+@media screen and (max-width: 435px) {
   .navLinks {
     display: none;
   }
   .burgerMenuIcon {
-    display: flex;
+    display: block;
   }
 }

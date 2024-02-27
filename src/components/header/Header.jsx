@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,9 +28,14 @@ function Header() {
     },
   ];
 
+  const [state, setState] = useState("block");
+
   const handleBurgerOpen = () => {
-    // console.log("clicked");
-    
+    if (state === "none") {
+      setState("block");
+    } else {
+      setState("none");
+    }
   };
 
   return (
@@ -56,10 +61,10 @@ function Header() {
           height={40}
           className={styles.burgerMenuIcon}
         />
-        {/* ბურგერ მენიუ იქნება აქ */}
       </header>
+      {/* ბურგერ მენიუ იქნება აქ */}
 
-      <div className={styles.menu}>
+      <div className={styles.menu} style={{ display: `${state}` }}>
         {navLinks.map((link) => (
           <li className={styles.menuLink}>
             <Link className={styles.menuLink} href={link.url}>
@@ -71,5 +76,4 @@ function Header() {
     </>
   );
 }
-
 export default Header;

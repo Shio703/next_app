@@ -28,7 +28,7 @@ function Header() {
     },
   ];
 
-  const [state, setState] = useState("block");
+  const [state, setState] = useState("none");
 
   const handleBurgerOpen = () => {
     if (state === "none") {
@@ -36,6 +36,10 @@ function Header() {
     } else {
       setState("none");
     }
+  };
+
+  const closeMenu = () => {
+    setState("none");
   };
 
   return (
@@ -62,9 +66,13 @@ function Header() {
           className={styles.burgerMenuIcon}
         />
       </header>
-      {/* ბურგერ მენიუ იქნება აქ */}
+      {/* ბურგერ მენიუ*/}
 
-      <div className={styles.menu} style={{ display: `${state}` }}>
+      <div
+        onClick={closeMenu}
+        className={styles.menu}
+        style={{ display: `${state}` }}
+      >
         {navLinks.map((link) => (
           <li className={styles.menuLink}>
             <Link className={styles.menuLink} href={link.url}>

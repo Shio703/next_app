@@ -9,7 +9,7 @@ export default function Home() {
       </div>
       <center>ეს არის მთავარი გვერდი</center>
       <section className={styles.mainSec}>
-        <div className={styles.imageWrapper}>
+        {/* <div className={styles.imageWrapper}>
           <Image
             src={"/me-sibereshi.jpg"}
             width={350}
@@ -17,7 +17,7 @@ export default function Home() {
             alt="Me Sibereshi"
             className={styles.img}
           />
-        </div>
+        </div> */}
       </section>
     </main>
   );

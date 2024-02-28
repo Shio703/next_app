@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function JsToDo() {
   return (
@@ -21,9 +22,9 @@ function JsToDo() {
           The project "JS TO DO" is a project for the 3rd module selection.
           </p>
           <span>
-            <a href="https://jstodobyshio.netlify.app" target="_blank">
+            <Link href="https://jstodobyshio.netlify.app" target="_blank">
               see it in live from here
-            </a>
+            </Link>
           </span>
         </div>
       </section>

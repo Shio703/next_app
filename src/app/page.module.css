@@ -2,6 +2,9 @@
   background-color: antiquewhite;
   min-height: 47em;
   border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mySpan {
@@ -15,8 +18,7 @@
 .mainSec {
   max-width: 85%;
   display: flex;
-  margin-right: 12px;
-  
+  justify-content: center;
 }
 
 .imageWrapper {
@@ -24,11 +26,8 @@
   max-width: 350px;
   display: flex;
   margin-top: 3em;
-  
 }
 
 .img {
-  width: 100%;
-  position: absolute;
-
+  object-fit: inherit;
 }

@@ -29,6 +29,7 @@
   height: auto;
   max-height: 65vh;
   border-radius: 17px;
+  object-fit: contain;
 }
 
 .textWrapper {

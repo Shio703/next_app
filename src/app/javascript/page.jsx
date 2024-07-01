@@ -14,6 +14,7 @@ function JavaScript() {
             width={400}
             height={350}
             className={styles.msImage}
+            alt="fm-img"
           ></Image>
         </div>
         <div className={styles.textWrapper}>

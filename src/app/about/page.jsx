@@ -12,6 +12,7 @@ function About() {
             width={250}
             height={240}
             className={styles.profilePic}
+            alt="Logo"
           ></Image>
         </div>
         <div className={styles.profileLinks}>
@@ -19,19 +20,19 @@ function About() {
             href="https://www.instagram.com/shio_zhamurashvili/"
             target="_blank"
           >
-            <Image src="/Instagram-icon.png" width={50} height={50}></Image>
+            <Image src="/Instagram-icon.png" width={50} height={50} alt="I-img"></Image>
           </a>
           <a
             href="https://www.youtube.com/channel/UCmykV5UurdztYgjm8vEM2Fw"
             target="_blank"
           >
-            <Image src="/YT-Icon.png" width={50} height={50}></Image>
+            <Image src="/YT-Icon.png" width={50} height={50} alt="Y-img"></Image>
           </a>
           <a
             href="https://www.facebook.com/Shio.Zhamurashvili/"
             target="_blank"
           >
-            <Image src="/Facebook-icon.png" width={50} height={50}></Image>
+            <Image src="/Facebook-icon.png" width={50} height={50}alt="F-img"></Image>
           </a>
         </div>
         <p className={styles.profileInfo}>

@@ -52,8 +52,12 @@ function Header() {
           />
         </a>
         <nav className={styles.navLinks}>
-          {navLinks.map((link) => (
-            <Link className={styles.navLink} href={link.url}>
+          {navLinks.map((link, index) => (
+            <Link
+              key={navLinks[index].id}
+              className={styles.navLink}
+              href={link.url}
+            >
               {link.title}
             </Link>
           ))}
@@ -64,6 +68,7 @@ function Header() {
           width={40}
           height={40}
           className={styles.burgerMenuIcon}
+          alt="image"
         />
       </header>
       {/* ბურგერ მენიუ*/}
@@ -73,8 +78,8 @@ function Header() {
         className={styles.menu}
         style={{ display: `${state}` }}
       >
-        {navLinks.map((link) => (
-          <li className={styles.menuLink}>
+        {navLinks.map((link, index) => (
+          <li key={navLinks[index].id} className={styles.menuLink}>
             <Link className={styles.menuLink} href={link.url}>
               {link.title}
             </Link>

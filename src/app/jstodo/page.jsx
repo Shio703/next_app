@@ -14,6 +14,7 @@ function JsToDo() {
             width={400}
             height={350}
             className={styles.msImage}
+            alt="ms-img"
           ></Image>
         </div>
         <div className={styles.textWrapper}>

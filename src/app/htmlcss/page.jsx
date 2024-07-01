@@ -10,7 +10,7 @@ function HtmlCss() {
       <h2 className={styles.mainTitle}>HTML & CSS</h2>
       <section className={styles.mainSec}>
         <div className={styles.imageWrapper}>
-          <Image src={msImage} className={styles.msImage}></Image>
+          <Image alt="ms-img" src={msImage} className={styles.msImage}></Image>
         </div>
         <div className={styles.textWrapper}>
           <h3>My 1nd module final project</h3>

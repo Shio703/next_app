@@ -20,7 +20,9 @@ function JsToDo() {
         <div className={styles.textWrapper}>
           <h3>Work for 3nd module</h3>
           <p>
-          The project "JS TO DO" is a project for the 3rd module selection.
+            {`
+             The project "JS TO DO" is a project for the 3rd module selection.
+            `}
           </p>
           <span>
             <Link href="https://jstodobyshio.netlify.app" target="_blank">

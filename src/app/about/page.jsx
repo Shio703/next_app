@@ -36,9 +36,10 @@ function About() {
           </a>
         </div>
         <p className={styles.profileInfo}>
-          Hello! I'm <b>Shio&lt;703/&gt;</b> Beginner Frontend Web Developer. I
-          had learned web technologies such as HTML & CSS, JavaScript and
-          React's Framework Next.js.
+          {`Hello! I'm <b>Shio703</b> Beginner Frontend Web Developer. I
+            had learned web technologies such as HTML & CSS, JavaScript and
+            React's Framework Next.js.
+          `}
         </p>
       </section>
     </main>

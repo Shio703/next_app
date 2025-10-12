@@ -15,8 +15,8 @@ function HtmlCss() {
         <div className={styles.textWrapper}>
           <h3>My 1nd module final project</h3>
           <p>
-            Project "Fake Mess" is a clone of the Corporation Meta's
-            Messenger.com's login page.
+            {`Project "Fake Mess" is a clone of the Corporation Meta's
+              Messenger.com's login page.`}
           </p>
           <span>
             <Link href="https://fakemessenger.netlify.app" target="_blank">

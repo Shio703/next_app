@@ -20,9 +20,10 @@ function JavaScript() {
         <div className={styles.textWrapper}>
           <h3>My 2nd module final project</h3>
           <p>
-            The "FMJavascript" project is an updated version of "Fake Mess". In
+            {`The "FMJavascript" project is an updated version of "Fake Mess". In
             this update, I added a single page called "Users" where you can view
             the user information fetched from the API with the help of fetch();.
+            `}
           </p>
           <span>
             <Link href="https://fmjavascript.netlify.app" target="_blank">
